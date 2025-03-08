@@ -3,51 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNews - Trang Công Nghệ</title>
+    <title>TechNews - Trang Tin Công Nghệ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">TechNews</div>
+        <h1>TechNews</h1>
         <nav>
             <ul>
-                <li><a href="#">Trang Chủ</a></li>
-                <li><a href="#">Tin Công Nghệ</a></li>
-                <li><a href="#">Đánh Giá</a></li>
-                <li><a href="#">Liên Hệ</a></li>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Liên hệ</a></li>
             </ul>
         </nav>
+
+        <!-- Thanh tìm kiếm -->
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm bài viết..." id="search-input">
+            <button onclick="searchArticles()">Tìm kiếm</button>
+        </div>
     </header>
 
-    <section class="banner">
-        <img src="IMAGES/banner.jpg" alt="Công Nghệ Mới Nhất">
-        <div class="banner-text">
-            <h2>Khám Phá Công Nghệ Tương Lai</h2>
-            <p>Cập nhật tin tức công nghệ nhanh chóng, chính xác và chuyên sâu.</p>
-            <a href="#" class="btn">Xem Ngay</a>
-        </div>
-    </section>
+    <main>
+        <section class="articles">
+            <article class="article">
+                <h3>Bài viết 1: Công nghệ AI mới nhất</h3>
+                <p>AI đang thay đổi thế giới như thế nào...</p>
+            </article>
 
-    <section class="articles">
-        <div class="article">
-            <img src="IMAGES/tech1.jpg" alt="Tin công nghệ">
-            <h3>Trí Tuệ Nhân Tạo đang thay đổi thế giới</h3>
-            <p>AI ngày càng phát triển và đang thay đổi cách chúng ta làm việc...</p>
-            <a href="#">Đọc thêm</a>
-        </div>
+            <article class="article">
+                <h3>Bài viết 2: Đánh giá iPhone 15</h3>
+                <p>iPhone 15 có gì mới? Cùng khám phá ngay!</p>
+            </article>
 
-        <div class="article">
-            <img src="IMAGES/tech2.jpg" alt="Thiết bị công nghệ">
-            <h3>Những phát minh công nghệ mới nhất 2025</h3>
-            <p>Các công ty công nghệ đang chạy đua để tạo ra những đột phá...</p>
-            <a href="#">Đọc thêm</a>
-        </div>
+            <article class="article">
+                <h3>Bài viết 3: Xu hướng lập trình năm 2025</h3>
+                <p>Các công nghệ nào sẽ lên ngôi?</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Form đăng ký nhận tin tức -->
+    <section class="newsletter">
+        <h2>Đăng ký nhận tin tức</h2>
+        <p>Nhận tin tức công nghệ mới nhất qua email</p>
+        <input type="email" placeholder="Nhập email của bạn" id="email">
+        <button onclick="subscribe()">Đăng ký</button>
     </section>
 
     <footer>
         <p>&copy; 2025 TechNews. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
